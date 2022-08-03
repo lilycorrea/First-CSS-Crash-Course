@@ -95,7 +95,7 @@ list-style: none;
 .categories li{
     padding: bottom 6px;px ;
 border-bottom: dotted 1px #333;
-list-style-image: ;
+list-style-image:url(../) ;
 }
 .myform{
     padding: 20px;
@@ -138,6 +138,11 @@ list-style-image: ;
     border: 1px solid #000;
     margin-top: 30px;
     position: relative;
+    background-image:url(../bigimage.jpg);
+
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center top;
 }
 .p-box h1{
     position:absolute;
@@ -152,4 +157,17 @@ list-style-image: ;
 .fix-me{
     position:fixed;
     top: 400px;
+}
+.my-list li:first-child{
+    background-color: red;
+
+}
+.my-list li:last-child{
+    background: blue;
+}
+.my-list li:nth-child(5){
+    background: yellow;
+}
+.my-list li:nth-child(even){
+    background: gray;
 }
